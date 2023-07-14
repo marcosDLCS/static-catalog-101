@@ -1,0 +1,68 @@
+= static-catalog-101
+:toc: auto
+
+== TeachTech
+
+This simple project has been created as an example during **TeachTech 2023** to illustrate concepts during mentoring assignments.
+
+https://www.teacht3ch.com/[TeachTech] is a non-profit initiative, composed solely of volunteer IT professionals, whose goal is to teach the basics of programming to people with no previous knowledge, free of charge.
+
+== Introduction
+
+The goal of this repository is to show how to start and evolve a simple static catalog site using the most common web technologies such as HTML, CSS and Javascript.
+
+The purpose is not no create a complex excercise but to explain the basic usage of the mentioned technologies and provide guidance to people with low experience with their first steps.
+
+== The best way to run the examples
+
+Download Git and Visual Studio Code.
+
+* https://git-scm.com/
+* https://code.visualstudio.com/#alt-downloads
+
+Install Live Server extension in Visual Studio Code.
+
+* https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+Clone the project in your computer.
+
+[source, console]
+----
+git clone https://github.com/marcosDLCS/static-catalog-101.git
+----
+
+With **VSCode**, go to the desired folder and open the file **static-catalog.html**. Find the "Go Live" button in the right bottom part of the editor interface and press it.
+
+== The journey, step by step
+
+On our way to programming a static catalog, we will start with a version with a **very basic structure** and, step by step, we will add styles and functionality to **make the page look better and better** using just plain HTML, CSS and JS.
+
+---
+
+=== ☠️ 01. HTML skeleton and initial content
+
+First of all, the HTML structure to support the catalog must be created. The document will consist of different areas:
+
+* Header
+* Navigation / Actions
+* Catalog
+* Footer
+
+Start with basic HTML structures and 10-15 fake products with Lorem Ipsum text and basic stock images.
+
+---
+
+=== 💅🏻 02. Apply basic CSS styles
+
+In the following step simple styles will be applied to make the website more usable and better looking. 
+
+Based on the sketches we will try to centre the content and make it "responsive" to some extent. Also we are going to style the buttons and the input elements. 
+
+The introduction of custom text fonts and the use of background colors and shading will be an asset.
+
+== References
+
+* https://html.spec.whatwg.org/multipage/
+* https://dom.spec.whatwg.org/
+* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide

@@ -56,7 +56,7 @@ Start with basic HTML structures and 10-15 fake products with Lorem Ipsum text a
 
 In the following step simple styles will be applied to make the website more usable and better looking. 
 
-Based on the sketches we will try to centre the content and make it "responsive" to some extent. Also we are going to style the buttons and the input elements. 
+Based on the sketches we will try to centre the content and make it "responsive" to some extent. Also we are going to style the buttons and the other elements. 
 
 The introduction of custom text fonts and the use of background colors and shading will be an asset.
 

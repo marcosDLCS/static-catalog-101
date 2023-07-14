@@ -1,0 +1,10 @@
+= ☠️ 01. HTML skeleton and initial content
+
+First of all, the HTML structure to support the catalog must be created. The document will consist of different areas:
+
+* Header
+* Navigation / Actions
+* Catalog
+* Footer
+
+Start with basic HTML structures and 10-15 fake products with Lorem Ipsum text and basic stock images.

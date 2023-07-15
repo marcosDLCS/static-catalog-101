@@ -32,7 +32,7 @@ body {
 }
 
 main {
-  padding: 0 20%;
+  padding: 0 15%;
 }
 
 header h1 {
@@ -147,7 +147,7 @@ img {
 /* Media queries */
 /* -------------------------------------------------------------------------------- */
 
-@media (max-width: 150em) {
+@media (max-width: 125em) {
   main {
     padding: 0 10%;
   }
@@ -156,8 +156,20 @@ img {
     font-size: 4rem;
   }
 
+  img {
+    height: 15rem;
+  }
+
+  .product-description {
+    font-size: 1.1rem;
+  }
+
+  .product-price .highlight {
+    font-size: 2rem;
+  }
+
   #catalog {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -172,5 +184,13 @@ img {
 
   #catalog {
     grid-template-columns: 1fr;
+  }
+
+  .product-description {
+    font-size: 1rem;
+  }
+
+  .product-price .highlight {
+    font-size: 1.8rem;
   }
 }

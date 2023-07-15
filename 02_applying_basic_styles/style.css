@@ -1,0 +1,76 @@
+/* Styles */
+/* -------------------------------------------------------------------------------- */
+
+/* General */
+/* -------------------------------------------------------------------------------- */
+:root {
+    font-size: 16px;
+  }
+  
+  /* Elements */
+  /* -------------------------------------------------------------------------------- */
+  
+  header,
+  main,
+  footer {
+    border-style: solid;
+    border-width: 0.2rem;
+    padding: 2rem;
+    margin: 1rem 0;
+  }
+  
+  header {
+    border-color: tomato;
+  }
+  
+  main {
+    border-color: lightseagreen;
+  }
+  
+  footer {
+    border-color: greenyellow;
+  }
+  
+  img {
+      height: 25rem;
+  }
+  
+  /* Identifiers */
+  /* -------------------------------------------------------------------------------- */
+  
+  #actions {
+    border: 0.15rem double pink;
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  #catalog {
+    border: 0.15rem double pink;
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* Classes */
+  /* -------------------------------------------------------------------------------- */
+  
+  .product-item {
+    border: 0.1rem dashed grey;
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .product-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5.rem;
+    font-weight: 600;
+  }
+  
+  .sec-name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  
+  /* Media queries */
+  /* -------------------------------------------------------------------------------- */
+  

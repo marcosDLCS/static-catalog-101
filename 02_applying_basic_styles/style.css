@@ -3,74 +3,134 @@
 
 /* General */
 /* -------------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ribeye+Marrow&family=Roboto:wght@300&display=swap");
+
 :root {
-    font-size: 16px;
-  }
-  
-  /* Elements */
-  /* -------------------------------------------------------------------------------- */
-  
-  header,
-  main,
-  footer {
-    border-style: solid;
-    border-width: 0.2rem;
-    padding: 2rem;
-    margin: 1rem 0;
-  }
-  
-  header {
-    border-color: tomato;
-  }
-  
+  font-size: 16px;
+  font-family: var(--primary-font);
+
+  /* Fonts */
+
+  --header-font: "Ribeye Marrow", cursive;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Permanent Marker", cursive;
+
+  /* Colors */
+
+  /* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+  --color-one: #222831;
+  --color-two: #393e46;
+  --color-three: #00adb5;
+  --color-four: #eeeeee;
+}
+
+/* Elements */
+/* -------------------------------------------------------------------------------- */
+
+body {
+  background-color: var(--color-four);
+}
+
+main {
+  padding: 0 20%;
+}
+
+header h1 {
+  color: var(--color-two);
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 7rem;
+  text-shadow: 5px 5px var(--color-three);
+  margin: 1rem 0;
+}
+
+footer {
+  padding: 2rem 0;
+  color: var(--color-two);
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+}
+
+img {
+  height: 25rem;
+}
+
+/* Identifiers */
+/* -------------------------------------------------------------------------------- */
+
+#actions {
+  height: 5rem;
+  border: 4px solid var(--color-two);
+  background-color: var(--color-three);
+  border-radius: 0.5rem;
+  opacity: 0.5;
+}
+
+#catalog {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+/* Classes */
+/* -------------------------------------------------------------------------------- */
+
+.product-item {
+  padding: 2rem;
+  border: 4px solid var(--color-two);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-three) 1.95px 1.95px 2.6px;
+  background-color: white;
+}
+
+.product-media {
+  display: flex;
+  justify-content: center;
+}
+
+.product-title {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}
+
+.product-title p {
+  margin: 1rem 0;
+}
+
+.highlight {
+  color: var(--color-three);
+}
+
+/* Media queries */
+/* -------------------------------------------------------------------------------- */
+
+@media (max-width: 150em) {
   main {
-    border-color: lightseagreen;
+    padding: 0 10%;
   }
-  
-  footer {
-    border-color: greenyellow;
+
+  header h1 {
+    font-size: 4rem;
   }
-  
-  img {
-      height: 25rem;
-  }
-  
-  /* Identifiers */
-  /* -------------------------------------------------------------------------------- */
-  
-  #actions {
-    border: 0.15rem double pink;
-    padding: 1rem;
-    margin: 0.5rem 0;
-  }
-  
+
   #catalog {
-    border: 0.15rem double pink;
-    padding: 1rem;
-    margin: 0.5rem 0;
+    grid-template-columns: 1fr;
   }
-  
-  /* Classes */
-  /* -------------------------------------------------------------------------------- */
-  
-  .product-item {
-    border: 0.1rem dashed grey;
-    padding: 1rem;
-    margin: 0.5rem 0;
+}
+
+@media (max-width: 75em) {
+  main {
+    padding: 0 5%;
   }
-  
-  .product-title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5.rem;
-    font-weight: 600;
+
+  header h1 {
+    font-size: 4rem;
   }
-  
-  .sec-name {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1.5rem;
-    font-weight: 800;
+
+  #catalog {
+    grid-template-columns: 1fr;
   }
-  
-  /* Media queries */
-  /* -------------------------------------------------------------------------------- */
-  
+}

@@ -60,6 +60,15 @@ Based on the sketches we will try to centre the content and make it "responsive"
 
 The introduction of custom text fonts and the use of background colors and shading will be an asset.
 
+---
+
+=== 🏎 03. Load content dynamically
+
+The main goals for this step are 2:
+
+* Create a separate file with an array of products and load it as a module.
+* Use the new information in the array to generate the catalog dynamically. 
+
 == References
 
 * https://html.spec.whatwg.org/multipage/

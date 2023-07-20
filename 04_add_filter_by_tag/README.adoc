@@ -1,0 +1,6 @@
+= 🌪️ 04. Add a filter based on product tags
+
+The main objectives for this step are:
+
+* Use the tag information inside of the products array and show it in the interface.
+* Create a dropdown with the available tags that filters the elements of the catalog.  

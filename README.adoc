@@ -69,6 +69,15 @@ The main goals for this step are 2:
 * Create a separate file with an array of products and load it as a module.
 * Use the new information in the array to generate the catalog dynamically. 
 
+---
+
+=== 🌪️ 04. Add a filter based on product tags
+
+The main objectives for this step are:
+
+* Use the tag information inside of the products array and show it in the interface.
+* Create a dropdown with the available tags that filters the elements of the catalog.
+
 == References
 
 * https://html.spec.whatwg.org/multipage/

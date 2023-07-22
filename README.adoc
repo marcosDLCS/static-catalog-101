@@ -3,7 +3,7 @@
 
 == TeachTech
 
-This simple project has been created as an example during **TeachTech 2023** to illustrate concepts during mentoring assignments.
+This simple project has been created as an example during **TeachTech 2023** to illustrate concepts in mentoring assignments.
 
 https://www.teacht3ch.com/[TeachTech] is a non-profit initiative, composed solely of volunteer IT professionals, whose goal is to teach the basics of programming to people with no previous knowledge, free of charge.
 

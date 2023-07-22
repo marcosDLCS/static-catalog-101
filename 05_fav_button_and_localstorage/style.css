@@ -1,0 +1,287 @@
+/* Styles */
+/* -------------------------------------------------------------------------------- */
+
+/* General */
+/* -------------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ribeye+Marrow&family=Roboto:wght@300&display=swap");
+
+:root {
+  font-size: 16px;
+  font-family: var(--primary-font);
+
+  /* Fonts */
+
+  --header-font: "Ribeye Marrow", cursive;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Permanent Marker", cursive;
+
+  /* Colors */
+
+  /* https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+  --color-one: #222831;
+  --color-two: #393e46;
+  --color-three: #00adb5;
+  --color-four: #eeeeee;
+}
+
+/* Elements */
+/* -------------------------------------------------------------------------------- */
+
+body {
+  background-color: var(--color-four);
+}
+
+main {
+  padding: 0 15%;
+}
+
+header h1 {
+  color: var(--color-two);
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 7rem;
+  text-shadow: 5px 5px var(--color-three);
+  margin: 1rem 0;
+}
+
+footer {
+  padding: 2rem 0;
+  color: var(--color-two);
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+}
+
+img {
+  height: 20rem;
+}
+
+/* Identifiers */
+/* -------------------------------------------------------------------------------- */
+
+#actions {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#actions label {
+  font-size: 2rem;
+  color: var(--color-two);
+  font-family: var(--secondary-font);
+  margin: 0 1rem;
+}
+
+#tag-selector {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 4px solid var(--color-two);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-three) 1.95px 1.95px 2.6px;
+}
+
+#catalog {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+/* Classes */
+/* -------------------------------------------------------------------------------- */
+
+.product-item {
+  padding: 2rem;
+  border: 4px solid var(--color-two);
+  border-radius: 0.5rem;
+  box-shadow: var(--color-three) 1.95px 1.95px 2.6px;
+  background-color: white;
+}
+
+.product-title {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}
+
+.product-title p {
+  margin: 1rem 0;
+  text-decoration: underline;
+}
+
+.product-info {
+  display: flex;
+}
+
+.product-media {
+  display: flex;
+  justify-content: center;
+}
+
+.product-description {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.product-tags {
+  margin: 1rem 0;
+  display: flex;
+  column-gap: 1rem;
+}
+
+.product-tags span {
+  font-size: 0.9rem;
+  font-weight: 800;
+  border: 3px solid var(--color-one);
+  border-radius: 0.5rem;
+  color: black;
+  background-color: var(--color-four);
+  padding: 0.35rem;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+}
+
+.product-price .highlight {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px var(--color-two);
+}
+
+.product-actions {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1rem;
+}
+
+.product-actions button {
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  font-family: var(--secondary-font);
+  border: 0.3rem solid black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.product-actions button:hover {
+  background-color: var(--color-four);
+  box-shadow: var(--color-three) 1.95px 1.95px 2.6px;
+}
+
+.product-actions.like button{
+  background-color: pink;
+}
+
+.product-actions.like .product-reaction::before {
+  content: url("../resources/img/heart.png");
+}
+
+.highlight {
+  color: var(--color-three);
+  text-shadow: 2px 2px var(--color-two);
+  letter-spacing: 0.25rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Media queries */
+/* -------------------------------------------------------------------------------- */
+
+@media (max-width: 125em) {
+  main {
+    padding: 0 10%;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  img {
+    height: 15rem;
+  }
+
+  .product-description {
+    font-size: 1.1rem;
+  }
+
+  .product-price .highlight {
+    font-size: 2rem;
+  }
+
+  #catalog {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 85em) {
+  main {
+    padding: 0 5%;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  #catalog {
+    grid-template-columns: 1fr;
+  }
+
+  #actions label {
+    font-size: 1.5rem;
+  }
+
+  #tag-selector {
+    font-size: 1.2rem;
+  }
+
+  .product-description {
+    font-size: 1rem;
+  }
+
+  .product-price .highlight {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 50em) {
+  main {
+    padding: 0 2%;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  #catalog {
+    grid-template-columns: 1fr;
+  }
+
+  #actions label {
+    font-size: 1.5rem;
+  }
+
+  #tag-selector {
+    font-size: 1rem;
+  }
+
+  .product-item {
+    padding: 1rem;
+  }
+
+  .product-info {
+    flex-direction: column;
+  }
+
+  .product-description {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .product-price .highlight {
+    font-size: 1.5rem;
+  }
+}

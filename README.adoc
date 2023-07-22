@@ -37,6 +37,12 @@ With **VSCode**, go to the desired folder and open the file **static-catalog.htm
 
 On our way to programming a static catalog, we will start with a version with a **very basic structure** and, step by step, we will add styles and functionality to **make the page look better and better** using just plain HTML, CSS and JS.
 
+[cols=">a,<a", frame=none, grid=none, align=center]
+|===
+| image::resources/img/step_1.png[Step 1,250]
+| image::resources/img/step_6.png[Step 6,250]
+|===
+
 ---
 
 === ☠️ 01. HTML skeleton and initial content
@@ -77,6 +83,20 @@ The main objectives for this step are:
 
 * Use the tag information inside of the products array and show it in the interface.
 * Create a dropdown with the available tags that filters the elements of the catalog.
+
+---
+
+=== ❤️‍🔥 05. Favourite button and persist data in LocalStorage
+
+The main objectives for this step are:
+
+* Create a button to indicate if you like the house or not.
+* Persist this info in the LocalStorage section of the browser and retrieve it in every page load. 
+
+---
+
+=== 🛁 06. Final refactor and cleanup
+ 
 
 == References
 

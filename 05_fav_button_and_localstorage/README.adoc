@@ -1,0 +1,6 @@
+= ❤️‍🔥 05. Favourite button and persist data in LocalStorage
+
+The main objectives for this step are:
+
+* Create a button to indicate if you like the house or not.
+* Persist this info in the LocalStorage section of the browser and retrieve it in every page load. 
